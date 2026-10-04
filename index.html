@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Hello World</title>
+    </head>
+
+    <body>
+        <h1>Hello World Again</h1>
+    </body>
+      <input placeholder="Name" id="name" />
+    <button onclick="guessAge()">What's my age?</button>
+    <label id="result"></label>
+</body>
+
+<script>
+    async function guessAge() {
+        var name = <document.getElementByld(name).value;
+        const url = "https://agify.io/?name="+ name;
+        const response = await fetch(url);
+        const json = await response.json();
+        document.getElementByld("result").innerHTML = "I guess your age is: "+ json.age;      
+    }
+    </script>
+</html>
